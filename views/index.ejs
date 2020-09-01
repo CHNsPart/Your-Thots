@@ -1,0 +1,40 @@
+<%- include("./partials/header") %>
+<div id="body" class="ui main text container index">
+    <div id="h" class="ui huge header">Your Thots</div>
+    <div id="body" class="ui top attatched segment center whole">
+        <hr class="style-two">
+        <div class="ui devided items">
+            <% thots.forEach(function(thot){%>
+            <div id="whole" class="post item">
+
+
+                <div class="image image-fluid">
+                    <img id="imageI" src="<%= thot.image %> " alt="<%= thot.image %>'s Thot'">
+                </div>
+
+
+                <div id="content" class="content ">
+                    <a id="body" class="header" href="/thots/<%= thot._id %>"><%= thot.title %></a>
+
+                    <div class="meta d-none">
+                        <span id="white"><%= thot.created.toDateString() %> </span>
+                    </div>
+
+                    <!-- <div id="body" class="description">
+                        <p><# thot.body.substring(0,30) %>.....</p>
+                    </div> -->
+
+                    <div id="extra" class="extra">
+                        <a id="whole" class="ui inverted teal button center thotBtn" href="/thots/<%= thot._id %>">Full
+                            Thot?<i id="readM" class="right chevron icon"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr class="style-two">
+            <% }); %>
+        </div>
+    </div>
+</div>
+<%- include("./partials/footer") %>

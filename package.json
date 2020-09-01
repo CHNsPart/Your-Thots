@@ -1,0 +1,20 @@
+{
+  "name": "your-thots",
+  "version": "1.0.0",
+  "description": "This is an app where you can share your thots so that others can read and delete",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "CHNsPart",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.20"
+  }
+}

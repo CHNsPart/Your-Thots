@@ -1,0 +1,156 @@
+body {
+  background: rgb(36, 36, 36);
+  color: rgb(0, 253, 253);
+}
+#body {
+  background: rgb(36, 36, 36);
+  color: rgb(0, 253, 253);
+}
+#h {
+  margin-top: 0;
+  background: rgb(36, 36, 36);
+  color: rgb(0, 253, 253);
+  font-size: 4em;
+}
+i.icon {
+  font-size: 2em;
+}
+.container.main,
+.index {
+  margin-top: 5em;
+}
+.post {
+  margin-top: 3em;
+}
+#submit {
+  transition: all 0.3s linear;
+}
+#submit:hover {
+  font-size: 1.5rem;
+}
+#teal {
+  background: rgb(0, 253, 253);
+}
+#black {
+  color: black;
+}
+#delete {
+  display: inline;
+}
+#readM {
+  text-align: center;
+  padding: 5px;
+  color: blanchedalmond;
+}
+#extra {
+  display: flex;
+  text-align: left;
+  height: 100px;
+  width: 150px;
+}
+#readM:hover {
+  color: #006142;
+}
+#content {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#white {
+  color: #ffebcd;
+}
+#imageI {
+  height: 200px;
+  width: 200px;
+  margin-right: 50px;
+}
+#whole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m3m {
+  margin: 20px;
+}
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 235, 205, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #333; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 253, 253); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #333; /* creates padding around scroll thumb */
+}
+
+@media screen and (max-width: 992px) {
+  #content {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #content {
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  #extra {
+    height: 30px;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  #content {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .thotBtn {
+    height: 30px;
+    margin-bottom: 0;
+  }
+  .ui.items:not(.unstackable) > .item > .image,
+  .ui.items:not(.unstackable) > .item > .image > img {
+    min-width: 266.66px !important;
+    max-width: 100% !important;
+    width: auto !important;
+    max-height: 250px !important;
+  }
+  #imageI {
+    min-height: 100%;
+    min-width: 266.66px;
+    margin: 0;
+  }
+  .body {
+    height: 300px;
+    width: 500px;
+  }
+  #body {
+    background: rgb(36, 36, 36);
+    color: rgb(0, 253, 253);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+  hr {
+    margin: 0;
+  }
+}

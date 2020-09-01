@@ -1,0 +1,20 @@
+<%- include("./partials/header") %>
+<div class="ui main text container segment">
+    <div class="ui huge header"><%= thot.title %></div>
+    <div class="ui top attatched">
+        <div class="item">
+            <img class="ui centered rounded image" src="<%= thot.image %> " alt="<%= thot.image %>'s Thot'">
+            <div id="black" class="content">
+                <span class="centered"><%= thot.created.toDateString() %> </span>
+            </div>
+            <div id="black" class="description text container segment m3m">
+                <p><%- thot.body %> </p>
+            </div>
+            <a class="ui green inverted button" href="/thots/<%= thot._id %>/edit">Edit</a>
+            <form id="delete" action="/thots/<%= thot._id %>?_method=DELETE" method="POST">
+                <button class="ui red inverted button">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include("./partials/footer") %>
